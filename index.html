@@ -1,0 +1,168 @@
+<!DOCTYPE html>
+<html lang="ko">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>login</title>
+    <link rel="stylesheet" href="./style.css" />
+    <link rel="stylesheet" href="./reset.css" />
+    <script src="/main.js" defer></script>
+    <!-- ***************header************** -->
+  </head>
+  <body>
+    <div id="wrap">
+      <header>
+        <div id="header">
+          <h1>
+            <img
+              src="./img/logo_n.png"
+              alt="yes24 로고"
+              width="125"
+              height="100"
+            />
+          </h1>
+          <h2><strong>로그인</strong></h2>
+          <button>회원가입</button>
+        </div>
+      </header>
+      <!-- ************main************ -->
+      <main>
+        <!-- 메인에서 왼쪽 섹션 -->
+        <section id="main_section">
+          <article id="article1">
+            <!-- 회원 / 비회원 탭 버튼 -->
+            <div id="button">
+              <ul class="tab">
+                <li class="tab__item active">
+                  <a href="#tab1">회원</a>
+                </li>
+                <li class="tab__item">
+                  <a href="#tab2">비회원</a>
+                </li>
+              </ul>
+            </div>
+            <!-- 탭 내용 영역 -->
+            <div class="tab__content-wrapper">
+              <!-- 회원 탭 내용 -->
+              <div id="tab1" class="tab__content active">
+                <div class="login_member">
+                  <div id="idpw_member">
+                    <input
+                      type="text"
+                      name="id"
+                      placeholder="아이디"
+                      class="login_text"
+                    />
+                    <input
+                      type="password"
+                      name="pw"
+                      placeholder="비밀번호"
+                      class="login_text"
+                    />
+                  </div>
+                  <div id="checkbox">
+                    <input
+                      type="checkbox"
+                      id="keep_login"
+                      name="로그인 상태 유지"
+                    />
+                    <label for="keep_login">로그인 상태 유지</label>
+                    <input type="checkbox" id="save_id" name="아이디 저장" />
+                    <label for="save_id">아이디 저장</label>
+                  </div>
+                  <div id="login_button">
+                    <button>로그인</button>
+                  </div>
+                  <div class="id_search">
+                    <!--아이디 비밀번호 찾기-->
+                    <a href="#">아이디 찾기</a>
+                    <p>|</p>
+                    <a href="#">비밀번호 찾기</a>
+                  </div>
+                  <div id="sns_login_button">
+                    <!--sns 로그인 버튼들 -->
+                    <button class="button">
+                      <img
+                        src="./img/네이버로고.png"
+                        alt="네이버로고"
+                        class="sns_image"
+                      />
+                      <p>네이버 아이디로 로그인</p>
+                    </button>
+                    <button class="button">
+                      <img
+                        src="./img/카카오톡 로고.png"
+                        alt="카카오톡로고"
+                        class="sns_image"
+                      />
+                      <p>카카오 아이디로 로그인</p>
+                    </button>
+                    <button class="button">
+                      <img
+                        src="./img/페이스북 로고.png"
+                        alt="페이스북로고"
+                        class="sns_image"
+                      />
+                      <p>페이스북 아이디로 로그인</p>
+                    </button>
+                    <button class="button">
+                      <img
+                        src="./img/모바일간편로그인 로고.png"
+                        alt="모바일간편로그인로고"
+                        class="sns_image"
+                      />
+                      <p>모바일 간편 로그인</p>
+                    </button>
+                  </div>
+                </div>
+              </div>
+              <!-- 비회원 탭 내용 -->
+              <div id="tab2" class="tab__content">
+                <div id="login_nonmember">
+                  <input
+                    type="text"
+                    name="oredr_number"
+                    placeholder="주문번호"
+                    class="login_text"
+                  />
+                  <input
+                    type="text"
+                    name="oredr_pw"
+                    placeholder="주문 비밀번호"
+                    class="login_text"
+                  />
+                  <div id="con_button">
+                    <button id="nonmember_button">확인</button>
+                  </div>
+                  <div class="id_search">
+                    <a href="#">아이디 찾기</a>
+                    <p>|</p>
+                    <a href="#">비밀번호 찾기</a>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </article>
+          <!-- <<<<메인에서 오른쪽 섹션>>>> -->
+          <article id="article2">
+            <img
+              src="./img/이달의혜택모음_bn_1080x1080.jpg"
+              alt="이달의 혜택모음"
+              id="main_section2_img1"
+              width="360"
+              height="360"
+            />
+            <img src="./img/청년문화예술패스.jpg" alt="청년문화예술패스" />
+          </article>
+        </section>
+      </main>
+      <!-- ************footer************ -->
+      <footer>
+        <div id="footer">
+          <img src="./img/bn_login_n_960x60.gif" alt="footer 이미지" />
+          <p>Copyright <strong>© YES24 Corp.</strong> All Rights Reserved.</p>
+        </div>
+      </footer>
+    </div>
+  </body>
+</html>

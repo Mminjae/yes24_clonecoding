@@ -1,0 +1,212 @@
+/* **********All.css********** */
+
+#wrap {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  background-color: #f8f8f8;
+}
+/* **********header.css********** */
+#header {
+  width: 960px;
+  height: 100px;
+  margin: 0 auto;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+header h1 {
+}
+header h2 {
+  font-size: 24px;
+  font-weight: 700;
+}
+header button {
+  padding: 0 12px;
+  height: 38px;
+  text-align: center;
+  border: solid 1px #ebebeb;
+  background-color: whitesmoke;
+  cursor: pointer;
+}
+#header button {
+  background-color: #ffffff;
+}
+/* **********main.css********** */
+main {
+  width: 960px;
+  background-color: #fff;
+  border: 1px solid #ebebeb;
+  box-sizing: border-box;
+  padding: 40px;
+}
+/* **********main_article1.css********** */
+
+/* **********회원/비회원 탭********** */
+.tab a {
+  text-decoration: none;
+  color: inherit;
+  font-size: 13px;
+  font-family: '맑은 고딕', 'Malgun Gothic', 'Apple SD Gothic Neo', AppleGothic,
+    '돋움', Dotum, '굴림', Gulim, Helvetica, sans-serif;
+}
+.tab {
+  display: flex;
+  align-items: center;
+  padding: 1rem;
+}
+.tab__item {
+  width: 180px;
+  height: 38px;
+  text-align: center;
+  padding: 10px;
+  border: 1px solid #ddd;
+}
+.tab__item.active {
+  display: inline-block;
+  border: 1px solid rgb(102, 153, 204);
+  background-color: white;
+  /* color: rgb(102, 153, 204); */
+}
+.tab__content-wrapper {
+  padding: 0rem 1rem;
+}
+.tab__content {
+  display: none;
+}
+.tab__content.active {
+  display: block;
+}
+/* **********회원/비회원 탭********** */
+main #article1 #button button {
+  width: 180px;
+  height: 38px;
+  margin: 0px;
+  padding: 0px;
+  background-color: #f8f8f8;
+  border: 1px solid #ebebeb;
+  cursor: pointer;
+}
+#main_section {
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-start;
+  gap: 40px;
+}
+/* 아이디/비밀번호 입력창 */
+.login_text {
+  width: 340px;
+  height: 50px;
+  display: block;
+  margin-top: 12px;
+  padding: 0 10px;
+  border: 1px solid lightgray;
+}
+main #article1 #idpw_member input:hover {
+  cursor: text;
+}
+main #article1 #login_nonmember input {
+  width: 340px;
+  height: 50px;
+  display: block;
+  margin-top: 12px;
+  padding: 0 10px;
+}
+main #article1 #checkbox {
+  margin: 17px 0px;
+  color: #666;
+  font-size: 13px;
+}
+main #article1 #login_button button {
+  width: 360px;
+  height: 60px;
+  background-color: rgb(0, 128, 255);
+  color: white;
+  font-size: 20px;
+  border: none;
+  cursor: pointer;
+}
+main #article1 #con_button button {
+  width: 360px;
+  height: 60px;
+  background-color: rgb(0, 128, 255);
+  color: white;
+  font-size: 20px;
+  border: none;
+  cursor: pointer;
+}
+main #article1 #checkbox button {
+  width: 360px;
+  height: 60px;
+  background-color: rgb(0, 128, 255);
+  color: white;
+  font-size: 20px;
+}
+/* 아이디/비밀번호 찾기 */
+#article1 .id_search {
+  margin-top: 10px;
+  font-size: 12px;
+  display: flex;
+}
+#article1 .id_search p,
+a {
+  color: #333;
+  text-decoration: none;
+  margin: 0 10px;
+}
+/* SNS 로그인 버튼 */
+main #article1 #sns_login_button {
+  margin-top: 20px;
+}
+main #article1 #sns_login_button .button {
+  background-color: #ffffff;
+  font-family: '맑은 고딕', 'Malgun Gothic', 'Apple SD Gothic Neo', AppleGothic,
+    '돋움', Dotum, '굴림', Gulim, Helvetica, sans-serif;
+  font-size: 14px;
+  border: 0.1px solid lightgray;
+}
+main #article1 #sns_login_button .button:hover {
+  cursor: pointer;
+}
+main #article1 #sns_login_button button {
+  display: flex;
+  align-items: center;
+  gap: 80px;
+  width: 360px;
+  margin-bottom: 10px;
+
+  background-color: #f8f8f8;
+  border: 1px solid #ebebeb;
+  font-size: 14px;
+  color: #333;
+  cursor: pointer;
+}
+main #article1 #sns_login_button button .sns_image {
+  padding: 0px 0px 0px 4px;
+}
+
+/* ********** 비회원 주문확인 css ********** */
+#nonmember_button {
+  margin: 16px 0px;
+}
+/* **********main_article2.css********** */
+#article2 {
+  width: 50%;
+  max-width: 400px; /* 적절히 조정 */
+}
+main #article2 img:nth-child(1) {
+  display: block;
+  margin-bottom: 10px;
+}
+/* **********footer.css********** */
+#footer {
+  width: 960px;
+  height: 110px;
+  text-align: center;
+}
+#footer p {
+  margin: 16px;
+  font-size: 12px;
+}
